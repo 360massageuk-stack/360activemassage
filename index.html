@@ -964,17 +964,18 @@
     </div>
     <div class="contact-form reveal">
       <p style="font-size:0.7rem; letter-spacing:0.05em; color:var(--silver-dim); margin-bottom:2rem; line-height:1.9;">Prefer to fill in a form? No problem — tell me a little about what you're looking for and I'll be in touch shortly.</p>
+      <form action="https://formspree.io/f/xvzweabg" method="POST">
       <div class="form-field">
         <label>Your Name</label>
-        <input type="text" placeholder="First &amp; last name">
+        <input type="text" name="name" placeholder="First &amp; last name">
       </div>
       <div class="form-field">
         <label>Phone or Email</label>
-        <input type="text" placeholder="Best way to reach you">
+        <input type="text" name="contact" placeholder="Best way to reach you">
       </div>
       <div class="form-field">
         <label>Treatment</label>
-        <select>
+        <select name="treatment">
           <option value="">Select a treatment...</option>
           <option>Relaxation Massage</option>
           <option>Deep Tissue Massage</option>
@@ -991,7 +992,7 @@
       </div>
       <div class="form-field">
         <label>Session Length</label>
-        <select>
+        <select name="duration">
           <option value="">Select duration...</option>
           <option>30 Minutes — £30</option>
           <option>60 Minutes — £60</option>
@@ -1004,9 +1005,10 @@
       </div>
       <div class="form-field">
         <label>Message</label>
-        <textarea rows="3" placeholder="Tell me a little about what you're looking for..."></textarea>
+        <textarea name="message" rows="3" placeholder="Tell me a little about what you're looking for..."></textarea>
       </div>
-      <button class="form-submit">Send Message →</button>
+      <button type="submit" class="form-submit">Send Message →</button>
+      </form>
     </div>
   </div>
 </section>
