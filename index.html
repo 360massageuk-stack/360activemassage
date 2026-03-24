@@ -569,27 +569,50 @@
 
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
-    nav { padding: 1.2rem 1.5rem; }
+    html, body { overflow-x: hidden; width: 100%; }
+    nav { padding: 1.2rem 1.5rem; width: 100%; }
     .nav-links, .nav-cta { display: none; }
     .nav-toggle { display: flex; }
-    .hero { padding: 0 1.5rem; }
-    .hero h1 { font-size: clamp(3.5rem, 12vw, 6rem); }
+    .nav-logo { font-size: 0.85rem; letter-spacing: 0.12em; }
+    .hero { padding: 0 1.5rem; min-height: 100vh; }
+    .hero h1 { font-size: clamp(3rem, 12vw, 5rem); }
     .hero-line { display: none; }
+    .hero-pills { flex-wrap: wrap; gap: 0.75rem; }
+    .hero-tagline { font-size: 1rem; }
+    .hero-cta-group { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .pillars { grid-template-columns: 1fr; }
-    .pillar { border-right: none; border-bottom: 1px solid rgba(168,168,168,0.08); padding: 3rem 1.5rem; }
-    .about, .prices-inner, .mobile-inner, .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
-    .about { padding: 5rem 1.5rem; }
-    .treatments { padding: 5rem 1.5rem; }
+    .pillar { border-right: none; border-bottom: 1px solid rgba(168,168,168,0.08); padding: 2.5rem 1.5rem; }
+    .about, .prices-inner, .mobile-inner, .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about { padding: 4rem 1.5rem; }
+    .treatments { padding: 4rem 1.5rem; }
     .treatments-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-    .treatments-note { text-align: left; }
+    .treatments-note { text-align: left; max-width: 100%; }
     .treatments-grid { grid-template-columns: 1fr; }
-    .prices { padding: 5rem 1.5rem; }
-    .mobile-section { padding: 5rem 1.5rem; }
-    .faq { padding: 5rem 1.5rem; }
+    .treatment-item { padding: 2rem 1.5rem; }
+    .prices { padding: 4rem 1.5rem; }
+    .prices-inner { grid-template-columns: 1fr; }
+    .mobile-section { padding: 4rem 1.5rem; }
+    .faq { padding: 4rem 1.5rem; }
     .faq-grid { grid-template-columns: 1fr; }
-    .contact { padding: 5rem 1.5rem; }
+    .contact { padding: 4rem 1.5rem; }
+    .contact-inner { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem 1.5rem; }
     .hero-scroll { left: 1.5rem; }
+    section { width: 100%; overflow-x: hidden; }
+    .about-card img { height: 260px; }
+    .price-duration { font-size: 0.95rem; }
+    .price-amount { font-size: 0.95rem; }
+    .section-title { font-size: clamp(1.8rem, 7vw, 3rem); }
+    .mobile-menu { top: 57px; }
+    .treatments-grid { grid-template-columns: 1fr !important; }
+    [style*="grid-column: span 3"] { grid-column: span 1 !important; }
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: clamp(2.8rem, 14vw, 4.5rem); }
+    .nav-logo { font-size: 0.75rem; }
+    .btn-primary { padding: 0.9rem 1.8rem; font-size: 0.55rem; }
+    .hero-tagline { font-size: 0.95rem; }
   }
 </style>
 </head>
@@ -602,7 +625,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#treatments">Treatments</a></li>
     <li><a href="#prices">Prices</a></li>
-    <li><a href="#mobile">Mobile Massage</a></li>
+    <li><a href="#mobile">Location</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -617,7 +640,7 @@
   <a href="#about" onclick="toggleMenu()">About</a>
   <a href="#treatments" onclick="toggleMenu()">Treatments</a>
   <a href="#prices" onclick="toggleMenu()">Prices</a>
-  <a href="#mobile" onclick="toggleMenu()">Mobile Massage</a>
+  <a href="#mobile" onclick="toggleMenu()">Location</a>
   <a href="#faq" onclick="toggleMenu()">FAQ</a>
   <a href="#contact" onclick="toggleMenu()">Book Now</a>
 </div>
@@ -627,7 +650,7 @@
   <div class="hero-bg"></div>
   <div class="hero-line"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Mobile Massage Therapy · Edinburgh</p>
+    <p class="hero-eyebrow">Massage Therapy · The Pleasance · Edinburgh</p>
     <h1>360<br><em>Active</em><br>Massage</h1>
     <div class="hero-pills">
       <span class="hero-pill">Recovery</span>
@@ -673,7 +696,7 @@
     <div class="about-divider"></div>
     <p>If you've had your fair share of massages, you'll clock the difference in about 30 seconds. I don't do the autopilot routine — I'm constantly tweaking and upgrading my techniques so your session is actually built around your body, not some laminated menu.</p>
     <p>My approach is shaped by decades of competitive sport and active training. That first-hand experience of pushing the body hard — and knowing what real recovery actually feels like — is what separates what I do from your average massage. I'm not just working from a textbook. I know bodies because I've lived in one that's been through it.</p>
-    <p>I'm based in Edinburgh and available mobile across Scotland — I come to you, wherever you are.</p>
+    <p>I'm based in The Pleasance, Edinburgh — one of the city's most central and well-connected areas. Sessions take place in a private, comfortable setting. I also offer mobile visits across Edinburgh and Scotland for those who prefer treatment at home.</p>
     <div style="margin-top:2.5rem;">
       <a href="#contact" class="btn-primary">Get in Touch</a>
     </div>
@@ -692,7 +715,7 @@
         <li>Body Scrub &amp; Dry Brush Treatments</li>
         <li>Tailor Made &amp; Bespoke Sessions</li>
       </ul>
-      <div class="about-location">Mobile · Edinburgh &amp; Scotland · 360massage.uk</div>
+      <div class="about-location">The Pleasance · Edinburgh · 360massage.uk</div>
     </div>
   </div>
 </section>
@@ -833,37 +856,37 @@
 <!-- MOBILE MASSAGE -->
 <section class="mobile-section" id="mobile">
   <div class="reveal">
-    <p class="section-label">Come To You</p>
-    <h2 class="section-title">Mobile Massage<br><em>Scotland</em></h2>
+    <p class="section-label">Where to Find Me</p>
+    <h2 class="section-title">Based in <em>Edinburgh</em></h2>
   </div>
   <div class="mobile-inner">
     <div class="reveal">
-      <p>I bring the full studio experience to your home, hotel, or workplace — across Edinburgh and throughout Scotland. No compromise on quality, no rushing, no unfamiliar environment. Just exceptional massage, exactly where you need it.</p>
-      <p>I'm available for individual sessions, corporate events, sports events, and regular home visits.</p>
+      <p>I'm based in The Pleasance, Edinburgh — a private, comfortable setting right in the heart of the city. Easy to get to whether you're coming from the Old Town, Southside, or anywhere in between.</p>
+      <p>Can't make it to me? I also offer mobile sessions across Edinburgh and beyond — I come fully equipped with everything needed for a professional treatment at your home, hotel, or workplace.</p>
       <div style="margin-top:2rem;">
-        <a href="#contact" class="btn-primary">Enquire About Mobile</a>
+        <a href="#contact" class="btn-primary">Book a Session</a>
       </div>
     </div>
     <div class="mobile-highlights reveal">
       <div class="mobile-highlight">
         <span class="highlight-num">01</span>
         <div class="highlight-text">
-          <h4>Your Location</h4>
-          <p>Home, hotel, office — I come fully equipped with everything needed for a professional session.</p>
+          <h4>The Pleasance · Edinburgh</h4>
+          <p>Private, comfortable sessions in a calm and professional setting. Central location, easy to reach from across the city.</p>
         </div>
       </div>
       <div class="mobile-highlight">
         <span class="highlight-num">02</span>
         <div class="highlight-text">
-          <h4>Edinburgh &amp; Beyond</h4>
-          <p>I'm based in Edinburgh but available across Scotland. Small travel fee for local visits, get in touch for further afield.</p>
+          <h4>Mobile Available</h4>
+          <p>Prefer treatment at home? I'm happy to travel across Edinburgh and Scotland. Small travel fee for local visits.</p>
         </div>
       </div>
       <div class="mobile-highlight">
         <span class="highlight-num">03</span>
         <div class="highlight-text">
           <h4>All Treatments Available</h4>
-          <p>Every treatment I offer is available as a mobile session — same quality, same precision, at your door.</p>
+          <p>Every treatment I offer is available at both my Edinburgh base and as a mobile session — same quality, same precision.</p>
         </div>
       </div>
     </div>
@@ -1001,7 +1024,7 @@
       </div>
       <div style="margin-top:2.5rem;">
         <div class="contact-item-label">Location</div>
-        <div class="contact-item-value">Mobile · Edinburgh &amp; Scotland</div>
+        <div class="contact-item-value">The Pleasance · Edinburgh</div>
       </div>
     </div>
     <div class="contact-form reveal">
@@ -1061,7 +1084,7 @@
     <div class="footer-logo">360 Active Massage</div>
     <div class="footer-tagline">Recovery · Performance · Precision</div>
   </div>
-  <div class="footer-copy">© 2026 Stuart · Active Massage Therapist · Edinburgh</div>
+  <div class="footer-copy">© 2026 Stuart · Active Massage Therapist · The Pleasance · Edinburgh</div>
 </footer>
 
 <script>
