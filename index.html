@@ -12,10 +12,10 @@
     --black: #0d0d0d;
     --dark: #141414;
     --mid: #1e1e1e;
-    --silver: #a8a8a8;
-    --silver-light: #d4d4d4;
-    --silver-dim: #888888;
-    --white: #f0efed;
+    --silver: #b8b8b8;
+    --silver-light: #dedede;
+    --silver-dim: #969696;
+    --white: #f6f4f0;
     --accent: #c9b99a;
   }
 
@@ -364,6 +364,61 @@
     color: var(--silver-dim);
   }
 
+
+  /* ── OILS ── */
+  .oils-section {
+    padding: 7rem 4rem;
+    border-top: 1px solid rgba(168,168,168,0.08);
+    background: var(--black);
+  }
+  .oils-inner {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+  .oils-intro {
+    font-size: 0.88rem;
+    line-height: 2;
+    color: var(--silver-dim);
+    margin-top: 2rem;
+  }
+  .oil-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(168,168,168,0.08);
+  }
+  .oil-card {
+    background: var(--dark);
+    padding: 2.5rem;
+    min-height: 240px;
+    transition: background 0.3s;
+  }
+  .oil-card:hover { background: var(--mid); }
+  .oil-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  .oil-card p {
+    font-size: 0.8rem;
+    line-height: 1.9;
+    color: var(--silver-dim);
+  }
+  .vegan-badge {
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 0.55rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--black);
+    background: var(--silver-light);
+    padding: 0.7rem 1.2rem;
+  }
+
   /* ── PRICES ── */
   .prices {
     padding: 8rem 4rem;
@@ -677,6 +732,9 @@
     .treatments-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .treatments-note { text-align: left; max-width: 100%; }
     .treatments-grid { grid-template-columns: 1fr; }
+    .oils-section { padding: 4rem 1.5rem; }
+    .oils-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .oil-cards { grid-template-columns: 1fr; }
     .treatment-item { padding: 2rem 1.5rem; }
     .prices { padding: 4rem 1.5rem; }
     .prices-inner { grid-template-columns: 1fr; }
@@ -755,7 +813,7 @@
       <span class="hero-pill">Performance</span>
       <span class="hero-pill">Precision</span>
     </div>
-    <p class="hero-tagline">"I'm on a mission to ruin you for every other massage you've ever had. In the best possible way."</p>
+    <p class="hero-tagline">"A massage experience you'll compare every other massage to."</p>
     <div class="hero-cta-group">
       <a href="#contact" class="btn-primary">Book a Session</a>
       <a href="#treatments" class="btn-ghost">View Treatments</a>
@@ -837,58 +895,86 @@
 
     <div class="treatment-item reveal">
       <div class="treatment-num">02</div>
+      <h3 class="treatment-name">Couples Massage</h3>
+      <p class="treatment-desc">A shared experience like no other. I come to you, your home, your space, your evening, and deliver two simultaneous, fully tailored massages side by side. No spa booking, no travel, no awkward robes. Just a genuinely luxurious experience for two, in the comfort of your own surroundings. Perfect for date nights, anniversaries, birthdays, or just because. This is the treatment people remember.</p>
+    </div>
+
+    <div class="treatment-item reveal">
+      <div class="treatment-num">03</div>
       <h3 class="treatment-name">Deep Tissue Massage</h3>
       <p class="treatment-desc">Targeted therapy for chronic tension, stubborn knots, and restricted movement. Slow, deliberate pressure into the deeper layers of muscle and connective tissue, releasing adhesions, restoring flexibility, and reducing pain at its source.</p>
     </div>
 
     <div class="treatment-item reveal">
-      <div class="treatment-num">03</div>
+      <div class="treatment-num">04</div>
       <h3 class="treatment-name">Sports Massage</h3>
       <p class="treatment-desc">Tailored for athletes and the active. Relieves muscle tension, enhances flexibility, and accelerates recovery. Whether preparing for competition or recovering from an intensive training block, it's built to optimise performance and reduce injury risk.</p>
     </div>
 
     <div class="treatment-item reveal">
-      <div class="treatment-num">04</div>
+      <div class="treatment-num">05</div>
       <h3 class="treatment-name">Tailor Made Massage</h3>
       <p class="treatment-desc">Every session starts with a conversation about pressure, focus areas, how deep or relaxing you want it. I build the whole session around your preferences. No cookie-cutter routines. No laminated menu. Real results, real relaxation.</p>
     </div>
 
     <div class="treatment-item reveal">
-      <div class="treatment-num">05</div>
+      <div class="treatment-num">06</div>
       <h3 class="treatment-name">Body Scrub</h3>
       <p class="treatment-desc">A rejuvenating full-body scrub paired with a soothing massage, finished with a warm shower rinse. The result is silky smooth skin, deeply refreshed, the kind of treatment that leaves you feeling entirely renewed from the outside in.</p>
     </div>
 
     <div class="treatment-item reveal">
-      <div class="treatment-num">06</div>
+      <div class="treatment-num">07</div>
       <h3 class="treatment-name">Reflexology</h3>
       <p class="treatment-desc">Precise pressure to specific points on the feet, hands, or ears, each corresponding to organs and systems throughout the body. Promotes deep relaxation, improves circulation, and supports natural healing in ways that go far beyond the feet alone.</p>
     </div>
 
     <div class="treatment-item reveal">
-      <div class="treatment-num">07</div>
+      <div class="treatment-num">08</div>
       <h3 class="treatment-name">Indian Head Massage</h3>
       <p class="treatment-desc">Targets tension in the scalp, neck, and shoulders, where stress quietly accumulates. Relieves headaches, mental fatigue, and muscle tightness while improving circulation. Deeply calming. Ideal for those who carry the world in their shoulders.</p>
     </div>
 
     <div class="treatment-item reveal">
-      <div class="treatment-num">08</div>
+      <div class="treatment-num">09</div>
       <h3 class="treatment-name">Thai Healing Massage</h3>
       <p class="treatment-desc">Often called "lazy person's yoga." Rhythmic compressions, acupressure along energy lines, and gentle passive stretches combine to improve flexibility, release deep tension, and ease stiffness. Performed fully clothed. An extraordinary sense of openness follows.</p>
     </div>
 
     <div class="treatment-item reveal">
-      <div class="treatment-num">09</div>
+      <div class="treatment-num">10</div>
+      <h3 class="treatment-name">Aloe Vera Oil Massage</h3>
+      <p class="treatment-desc">A cooling, skin-soothing treatment using aloe vera oil, ideal during warmer months, after sun exposure, or whenever you want something lighter and refreshing. Hydrating, calming, and deeply relaxing, with the same tailored pressure and attention to detail as every 360 Active Massage session.</p>
+    </div>
+
+    <div class="treatment-item reveal">
+      <div class="treatment-num">11</div>
       <h3 class="treatment-name">Mobility &amp; Stretch Therapy</h3>
       <p class="treatment-desc">Designed to loosen tight areas, improve flexibility, and get your body moving properly again. A mix of assisted stretching and targeted release work that helps reduce stiffness, improve range of motion, and leave you feeling more open, mobile, and comfortable.</p>
     </div>
 
-    <div class="treatment-item reveal" style="grid-column: span 3; background: var(--mid);">
-      <div class="treatment-num">10</div>
-      <h3 class="treatment-name">Couples Massage</h3>
-      <p class="treatment-desc">A shared experience like no other. I come to you, your home, your space, your evening, and deliver two simultaneous, fully tailored massages side by side. No spa booking, no travel, no awkward robes. Just a genuinely luxurious experience for two, in the comfort of your own surroundings. Perfect for date nights, anniversaries, birthdays, or just because. This is the treatment people remember.</p>
-    </div>
+  </div>
+</section>
 
+<!-- PROFESSIONAL OILS -->
+<section class="oils-section" id="oils">
+  <div class="oils-inner">
+    <div class="reveal">
+      <p class="section-label">Professional Oils</p>
+      <h2 class="section-title">Quality oils, <em>better feel</em></h2>
+      <p class="oils-intro">Every treatment includes carefully selected professional oils chosen for comfort, skin feel, and performance. The aim is simple: smooth glide, nourished skin, and a treatment that feels clean, professional, and never greasy.</p>
+      <span class="vegan-badge">Vegan Friendly Options</span>
+    </div>
+    <div class="oil-cards reveal">
+      <div class="oil-card">
+        <h3>Pure Soya Bean Oil</h3>
+        <p>A light, smooth, 100% vegan oil that provides excellent glide while leaving the skin feeling nourished rather than heavy. Ideal for deep tissue, relaxation, and tailored massage work.</p>
+      </div>
+      <div class="oil-card">
+        <h3>Aloe Vera Oil</h3>
+        <p>A refreshing summer option with a cooling, soothing feel. Perfect for clients who prefer a lighter treatment or want their skin to feel calm, hydrated, and revived after the session.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1253,6 +1339,7 @@
         <select name="treatment">
           <option value="">Select a treatment...</option>
           <option>Relaxation Massage</option>
+          <option>Couples Massage</option>
           <option>Deep Tissue Massage</option>
           <option>Sports Massage</option>
           <option>Tailor Made Massage</option>
@@ -1260,8 +1347,8 @@
           <option>Reflexology</option>
           <option>Indian Head Massage</option>
           <option>Thai Healing Massage</option>
+          <option>Aloe Vera Oil Massage</option>
           <option>Mobility &amp; Stretch Therapy</option>
-          <option>Couples Massage</option>
           <option>Not sure — advise me</option>
         </select>
       </div>
