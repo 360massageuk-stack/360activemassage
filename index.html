@@ -700,7 +700,32 @@
       padding: 40px 36px;
     }
 
-    .price-block.featured { background: var(--bg-card); }
+    .price-block.featured {
+      background: var(--bg-card);
+      box-shadow: inset 0 2px 0 rgba(201,185,154,0.55);
+    }
+
+    .price-row.popular {
+      margin: 0 -12px;
+      padding: 14px 12px;
+      background: rgba(201,185,154,0.07);
+      border-bottom-color: rgba(201,185,154,0.18);
+    }
+
+    .popular-tag {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 3px 7px;
+      border: 1px solid rgba(201,185,154,0.35);
+      color: var(--accent);
+      font-size: 8px;
+      line-height: 1;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      font-weight: 500;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
 
     .price-cat {
       font-size: 9px;
@@ -1588,21 +1613,21 @@
       <p class="eyebrow">Investment</p>
       <div class="divider"></div>
       <h2>Simple, <em>transparent</em> pricing</h2>
-      <p>All treatments available at the rates below. Session length chosen at booking.</p>
+      <p>Every massage is tailored to you. Choose the session length that suits you and we’ll shape the treatment around what your body needs.</p>
     </div>
 
     <div class="pricing-grid">
-      <div class="price-block">
-        <div class="price-cat">Standard Sessions</div>
+      <div class="price-block featured">
+        <div class="price-cat">Tailored Massage Sessions</div>
         <div class="price-row"><span class="price-label">30 Minutes</span><span class="price-amount">£30</span></div>
-        <div class="price-row"><span class="price-label">60 Minutes</span><span class="price-amount">£60</span></div>
+        <div class="price-row popular"><span class="price-label">60 Minutes <span class="popular-tag">Most Popular</span></span><span class="price-amount">£60</span></div>
         <div class="price-row"><span class="price-label">90 Minutes</span><span class="price-amount">£90</span></div>
       </div>
 
-      <div class="price-block featured">
-        <div class="price-cat">Premium · Body Scrub</div>
-        <div class="price-row"><span class="price-label">Body Scrub · 60 min</span><span class="price-amount">£90</span></div>
-        <div class="price-row"><span class="price-label">Body Scrub · 90 min</span><span class="price-amount">£120</span></div>
+      <div class="price-block">
+        <div class="price-cat">Body Scrub</div>
+        <div class="price-row"><span class="price-label">60 Minutes</span><span class="price-amount">£90</span></div>
+        <div class="price-row"><span class="price-label">90 Minutes</span><span class="price-amount">£120</span></div>
       </div>
 
       <div class="price-block">
