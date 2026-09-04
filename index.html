@@ -62,11 +62,7 @@
         },
         {
           "@type": "AdministrativeArea",
-          "name": "East Lothian"
-        },
-        {
-          "@type": "Country",
-          "name": "Scotland"
+          "name": "West Lothian"
         }
       ],
       "hasOfferCatalog": {
@@ -880,116 +876,6 @@
       line-height: 1.4;
     }
 
-    /* ============================================
-       FRINGE
-    ============================================ */
-    #fringe {
-      border-top: 1px solid var(--border);
-      background: linear-gradient(180deg, #0d0d0d 0%, #100e0c 100%);
-    }
-
-    .fringe-header {
-      max-width: 720px;
-      margin-bottom: 64px;
-    }
-
-    .fringe-header h2 { margin-bottom: 20px; }
-
-    .fringe-header p {
-      font-size: 15px;
-      color: var(--text-mid);
-      line-height: 1.8;
-      margin-bottom: 16px;
-    }
-
-    .fringe-header .fringe-ctas {
-      display: flex;
-      gap: 16px;
-      margin-top: 40px;
-      flex-wrap: wrap;
-    }
-
-    .fringe-cards {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: var(--border);
-      margin-bottom: 48px;
-    }
-
-    .fringe-card {
-      background: var(--bg);
-      padding: 32px 28px;
-    }
-
-    .fringe-card h4 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 18px;
-      font-weight: 400;
-      color: var(--white);
-      margin-bottom: 10px;
-      margin-top: 12px;
-    }
-
-    .fringe-card p {
-      font-size: 12px;
-      color: var(--text-dim);
-      line-height: 1.65;
-    }
-
-    .fringe-dates {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 40px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-
-    .fringe-dates-left {}
-
-    .festival-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
-      color: var(--white);
-      line-height: 1.1;
-      margin-bottom: 4px;
-    }
-
-    .festival-date {
-      font-size: 12px;
-      color: var(--accent);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-      font-weight: 500;
-    }
-
-    .festival-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .festival-list li {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      border-top: 1px solid var(--border);
-      font-size: 13px;
-    }
-
-    .festival-list li span:first-child { color: var(--text-mid); }
-    .festival-list li span:last-child { color: var(--accent); font-size: 11px; letter-spacing: 1px; }
-
-    .fringe-dates-right p {
-      font-size: 14px;
-      color: var(--text-mid);
-      line-height: 1.8;
-      margin-bottom: 24px;
-    }
 
     /* ============================================
        FAQ
@@ -1362,7 +1248,6 @@
       .oils-section { padding: 80px 48px; }
 
       .treatments-grid { grid-template-columns: repeat(2, 1fr); }
-      .fringe-cards { grid-template-columns: repeat(2, 1fr); }
       .gallery-grid { grid-template-columns: repeat(3, 1fr); }
     }
 
@@ -1381,8 +1266,6 @@
       .treatments-grid { grid-template-columns: 1fr; }
       .pricing-grid { grid-template-columns: 1fr; }
       .location-grid { grid-template-columns: 1fr; gap: 48px; }
-      .fringe-cards { grid-template-columns: 1fr 1fr; }
-      .fringe-dates { grid-template-columns: 1fr; gap: 32px; }
       .faq-grid { grid-template-columns: 1fr; }
       .gallery-grid { grid-template-columns: repeat(2, 1fr); }
       .contact-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -1396,7 +1279,6 @@
     }
 
     @media (max-width: 480px) {
-      .fringe-cards { grid-template-columns: 1fr; }
       .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
@@ -1413,8 +1295,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#treatments">Treatments</a></li>
     <li><a href="#prices">Prices</a></li>
-    <li><a href="#mobile">Location</a></li>
-   <li><a href="/edinburgh-fringe-massage.html">Fringe</a></li>
+    <li><a href="#mobile">Mobile</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#gallery">Gallery</a></li>
   </ul>
@@ -1430,8 +1311,7 @@
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#treatments" onclick="closeMenu()">Treatments</a>
   <a href="#prices" onclick="closeMenu()">Prices</a>
-  <a href="#mobile" onclick="closeMenu()">Location</a>
-  <a href="#fringe" onclick="closeMenu()">Edinburgh Fringe</a>
+  <a href="#mobile" onclick="closeMenu()">Mobile</a>
   <a href="#faq" onclick="closeMenu()">FAQ</a>
   <a href="#gallery" onclick="closeMenu()">Gallery</a>
   <a href="#contact" onclick="closeMenu()" style="color:var(--accent)"> Now →</a>
@@ -1490,7 +1370,7 @@
         <h2>Massage that's <em>built around</em> your body</h2>
         <p>Looking for male massage in Edinburgh? Your treatment should feel personal, not clinical. Every session is shaped around you, your body, your lifestyle, and what you actually need on the day. I don't follow a scripted routine or rushed "standard" treatment. I'm constantly refining my approach to make sure each session feels tailored, effective, and genuine.</p>
         <p>My background comes from years of active training and competitive sport, so I understand first hand what recovery, tension, fatigue, and physical strain really feel like. That experience naturally influences the way I work, combining knowledge, intuition, and a practical understanding of the body.</p>
-        <p>Based in The Pleasance, Edinburgh, I work from a private, comfortable setting in one of the city's most central locations. Mobile visits are also available across Edinburgh and Scotland.</p>
+        <p>Based in The Pleasance, Edinburgh, I work from a private, comfortable setting in one of the city's most central locations. Mobile visits are also available across Edinburgh, Midlothian and West Lothian.</p>
         <a href="#contact" class="btn-primary" style="margin-top:32px;display:inline-block">Get in Touch</a>
 
         <div class="about-specialisms">
@@ -1668,10 +1548,10 @@
       <div>
         <p class="eyebrow">Mobile Sessions</p>
         <div class="divider"></div>
-        <p>I come to you — Edinburgh and across Scotland. Mobile sessions carry only a small additional travel fee for local visits. Get in touch for a mobile quote.</p>
+        <p>I come to you across Edinburgh, Midlothian and West Lothian, with selected nearby areas available by arrangement. Travel is agreed in advance, so there are no surprises. Get in touch for a mobile quote.</p>
       </div>
       <div>
-        <a href="#contact" class="btn-primary">Request Mobile Quote</a>
+        <a href="/location/" class="btn-primary">View Mobile Areas</a>
       </div>
     </div>
   </div>
@@ -1684,42 +1564,45 @@
   <div class="section-inner">
     <div class="location-grid">
       <div class="location-text">
-        <p class="eyebrow">Where to Find Me</p>
+        <p class="eyebrow">Studio &amp; Mobile</p>
         <div class="divider"></div>
-        <h2>Based in <em>Edinburgh</em></h2>
-        <p>I'm based in The Pleasance, Edinburgh — a private, comfortable setting right in the heart of the city. Easy to reach from the Old Town, Southside, or anywhere in between. Can't make it to me? I also offer mobile sessions across Edinburgh and beyond.</p>
+        <h2>Edinburgh studio. <em>Mobile around the city.</em></h2>
+        <p>My private treatment space is at The Pleasance in central Edinburgh. If you would rather be treated at home, in a hotel or at your workplace, mobile massage is available across Edinburgh, Midlothian and West Lothian, with selected nearby areas by arrangement.</p>
 
         <div class="location-points">
           <div class="location-point">
             <span class="lp-num">01</span>
             <div>
               <div class="lp-title">The Pleasance · Edinburgh</div>
-              <p class="lp-desc">Private, comfortable sessions in a calm and professional setting. Central location, easy to reach from across the city.</p>
+              <p class="lp-desc">Private studio sessions in a calm, professional setting right in central Edinburgh.</p>
             </div>
           </div>
           <div class="location-point">
             <span class="lp-num">02</span>
             <div>
-              <div class="lp-title">Mobile Available</div>
-              <p class="lp-desc">Prefer treatment at home? I'm happy to travel across Edinburgh and Scotland. Small travel fee for local visits.</p>
+              <div class="lp-title">Edinburgh &amp; Midlothian</div>
+              <p class="lp-desc">Mobile massage to homes, hotels and workplaces across Edinburgh and Midlothian. I bring the table, fresh linens, oils and equipment.</p>
             </div>
           </div>
           <div class="location-point">
             <span class="lp-num">03</span>
             <div>
-              <div class="lp-title">All Treatments Available</div>
-              <p class="lp-desc">Every treatment is available at both my Edinburgh base and as a mobile session. Same quality, same precision.</p>
+              <div class="lp-title">West Lothian &amp; Nearby</div>
+              <p class="lp-desc">Selected West Lothian and nearby visits are available by arrangement. Send your postcode and I will confirm availability and any travel charge before you book.</p>
             </div>
           </div>
         </div>
 
-        <a href="#contact" class="btn-primary" style="margin-top:32px;display:inline-block"> Book A Session</a>
+        <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:32px;">
+          <a href="#contact" class="btn-primary">Book A Session</a>
+          <a href="/location/" class="btn-ghost">View Mobile Massage Areas</a>
+        </div>
       </div>
 
       <div class="location-map-placeholder">
         <p class="eyebrow">Studio Location</p>
         <address>The Pleasance<br>Edinburgh</address>
-        <p style="font-size:12px;color:var(--text-dim);margin-top:8px;">Central Edinburgh · Easy Parking &amp; Transit</p>
+        <p style="font-size:12px;color:var(--text-dim);margin-top:8px;">Central Edinburgh · Studio &amp; Mobile</p>
       </div>
     </div>
   </div>
@@ -1808,69 +1691,6 @@
 
   </div>
 </section>
-<!-- ============================================================
-     FRINGE
-============================================================ -->
-<section id="fringe">
-  <div class="section-inner">
-    <div class="fringe-header">
-      <p class="eyebrow">Edinburgh Festival Fringe 2026</p>
-      <div class="divider"></div>
-      <h2>Massage during <em>the Fringe</em></h2>
-      <p>August in Edinburgh is like nowhere else on earth. The city buzzes, the streets fill, and for three weeks the energy is extraordinary. It's also exhausting. Performing eight shows a week, standing in queues, walking every inch of the Old Town, or simply keeping up with the relentless pace of festival life takes its toll on the body.</p>
-      <p>My treatment room is in The Pleasance, one of the Fringe's most iconic venue hubs, which means I'm perfectly placed to help you recover, reset, and keep going.</p>
-      <p>August is my busiest month and slots fill quickly. If you're planning to be in Edinburgh for the Fringe, I'd strongly recommend booking in advance.</p>
-      <div class="fringe-ctas">
-        <a href="#contact" class="btn-primary"> a Fringe Session</a>
-        <a href="https://wa.me/447404039036" class="btn-whatsapp" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp Me
-        </a>
-      </div>
-    </div>
-
-    <div class="fringe-cards">
-      <div class="fringe-card">
-        <div class="t-num">Performers &amp; Crew</div>
-        <h4>Keep the run going</h4>
-        <p>Multiple shows a day, vocal strain, physical fatigue, and the pressure of the run. A targeted session between performances can make the difference between a good show and a great one.</p>
-      </div>
-      <div class="fringe-card">
-        <div class="t-num">Festival Visitors</div>
-        <h4>Recover &amp; go again</h4>
-        <p>You're covering miles of cobblestone daily, standing through show after show. Give your body the recovery it deserves and go back out refreshed for another full evening of it.</p>
-      </div>
-      <div class="fringe-card">
-        <div class="t-num">Edinburgh Residents</div>
-        <h4>Antidote to Fringe fatigue</h4>
-        <p>August is your city's biggest month. Whether you're hosting guests, working the festival, or just navigating the chaos, Book A Session is the antidote to Fringe fatigue.</p>
-      </div>
-      <div class="fringe-card">
-        <div class="t-num">Early Booking Advised</div>
-        <h4>Slots go fast</h4>
-        <p>August fills fast. Fringe slots go first. To guarantee your preferred date and time, book before the end of July. Message me on WhatsApp to reserve your session.</p>
-      </div>
-    </div>
-
-    <div class="fringe-dates">
-      <div class="fringe-dates-left">
-        <div class="festival-name">Edinburgh Fringe</div>
-        <div class="festival-date">7 – 31 August 2026</div>
-        <ul class="festival-list">
-          <li><span>Edinburgh Festival Fringe</span><span>7 – 31 Aug</span></li>
-          <li><span>Edinburgh International Festival</span><span>7 – 30 Aug</span></li>
-          <li><span>Edinburgh Art Festival</span><span>14 – 30 Aug</span></li>
-          <li><span>Edinburgh  Festival</span><span>15 – 30 Aug</span></li>
-        </ul>
-      </div>
-      <div class="fringe-dates-right">
-        <p>Three weeks of the world's greatest arts festival, right on the doorstep. My treatment room at The Pleasance is available throughout August. All treatments, all durations, full availability from the first week of the Fringe.</p>
-        <p>Don't wait until you're burning out. Book your session now and have it in the diary before August even arrives.</p>
-        <a href="https://wa.me/447404039036" class="btn-primary" target="_blank" rel="noopener">Reserve Your August Slot</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============================================================
      FAQ
@@ -1897,8 +1717,8 @@
         <p class="faq-a">Just a reasonably clear space. For table massage I bring the professional massage table, fresh linens, oils and equipment, and a room roughly 3m x 2m is ideal. Short on space? Shiatsu Chair Massage needs much less room, is performed fully clothed and requires no oils or changing.</p>
       </div>
       <div class="faq-item">
-        <h3 class="faq-q">Do you offer massage during the Edinburgh Fringe?</h3>
-        <p class="faq-a">Yes — August is my busiest month and I'm available throughout the Fringe at my treatment room in The Pleasance. I see performers, crew, and visitors alike. Slots fill fast so I'd recommend booking before July.</p>
+        <h3 class="faq-q">Which areas do you cover for mobile massage?</h3>
+        <p class="faq-a">My main mobile coverage is Edinburgh, Midlothian and West Lothian. If you are just outside these areas, send me your postcode and I will let you know whether I can travel to you and confirm any travel charge before booking.</p>
       </div>
       <div class="faq-item">
         <h3 class="faq-q">How do I know which treatment to choose?</h3>
@@ -1906,15 +1726,11 @@
       </div>
       <div class="faq-item">
         <h3 class="faq-q">How far in advance should I book?</h3>
-        <p class="faq-a">As early as possible is always best, especially for evenings and weekends. During the Edinburgh Fringe in August, availability goes quickly. That said, last minute sessions can sometimes be accommodated.</p>
+        <p class="faq-a">As early as possible is always best, especially for evenings and weekends. That said, last-minute sessions can sometimes be accommodated, so it is always worth asking.</p>
       </div>
       <div class="faq-item">
         <h3 class="faq-q">Is there a cancellation policy?</h3>
         <p class="faq-a">I just ask for as much notice as possible if you need to cancel or rearrange. Get in touch via WhatsApp or phone and I'll always do my best to find a solution that works for you.</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-q">I'm a Fringe performer — can you help with performance recovery?</h3>
-        <p class="faq-a">Absolutely. Performing multiple shows daily is physically and mentally demanding. Sports massage, deep tissue work, and mobility therapy are all brilliant for keeping you in shape throughout a long run. Many performers  a regular slot for the duration of the festival.</p>
       </div>
     </div>
   </div>
@@ -2128,6 +1944,12 @@
   <p>
     <a href="/shiatsu-chair-massage.html">
       Shiatsu Chair Massage
+    </a>
+  </p>
+
+  <p>
+    <a href="/location/">
+      Mobile Massage Areas
     </a>
   </p>
 </div>
